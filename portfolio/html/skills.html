@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/model.png"></link>
+    <title>My Skills Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #081b31;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0a82dd; /* Change color on hover */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #0a82dd;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center; /* Center align items */
+        }
+
+        section img {
+            max-width: 100px; 
+            margin-right: 20px; 
+           filter: drop-shadow(2px 4px 2px rgb(79, 8, 8));
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #081b31;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block; /* Stack links on smaller screens */
+                margin: 10px 0;
+            }
+            nav ul li a {
+                font-size: 1.5rem; /* Reduce font size */
+            }
+            section {
+                flex-direction: column; /* Stack image and text vertically */
+                align-items: flex-start; /* Align items to start */
+            }
+            section img {
+                margin-right: 0; /* Remove right margin */
+                margin-bottom: 10px; /* Add bottom margin for spacing */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 2.5rem;">My Skills </h1>
+        <nav>
+            <ul>
+                <li><a href="#gaming">Gaming</a></li>
+                <li><a href="#programming">Programming</a></li>
+                <li><a href="#editing">Editing</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="gaming">
+            <img src="../img/gamer.png" alt="Gaming Icon">
+            <div>
+                <h2>Gaming Skills</h2>
+                <p>As a passionate gamer, I excel in various genres including:</p>
+                <ul>
+                    <li>First-Person Shooters (FPS)</li>
+                    <li>Real-Time Strategy (RTS)</li>
+                    <li>Role-Playing Games (RPG)</li>
+                </ul>
+                <p>Notable achievements include:</p>
+                <ul>
+                    <li>Top 10% in <em>Competitive FPS</em> tournaments.</li>
+                    <li>Streamer with an audience of 1,000+ followers.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="programming">
+            <img src="../img/coder.png" alt="Programming Icon">
+            <div>
+                <h2>Programming Skills</h2>
+                <p>I have experience in several programming languages, including:</p>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+                <p>Projects I have worked on:</p>
+                <ul>
+                    <li>Developed a web application.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="editing">
+            <img src="../img/editor.png" alt="Editing Icon">
+            <div>
+                <h2>Editing Skills</h2>
+                <p>As an editor, I specialize in:</p>
+                <ul>
+                    <li>Video editing for YouTube and other platforms.</li>
+                    <li>Content editing for blogs and articles.</li>
+                </ul>
+                <p>Notable works include:</p>
+                <ul>
+                    <li>Editing promotional videos for local gaming events.</li>
+                    <li>Creating visually engaging thumbnails for YouTube.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact me at <a href="mailto:your.email@example.com">kiru.email@example.com</a></p>
+    </footer>
+</body>
+</html>

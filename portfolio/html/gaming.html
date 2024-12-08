@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+     <style>
+        body{
+            scroll-behavior: smooth;
+        }
+        .hero {
+            background-image: url('../img/gamebg.jpg'); /* Replace with your image */
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .card{
+            box-shadow:0 1px 15px rgba(0, 0, 0, 0.3), 0 1px ;
+            height: 400px;
+            cursor: pointer;
+        }
+        .game-image {
+            height: 300px;
+            object-fit: cover;
+        }
+        #contact{
+            background-color: rgb(243, 241, 241);
+        }
+        footer{
+            background-color: gray;
+        }
+
+        @media(max-width:800px){
+            .card{
+                width: 110px;
+                height: 130px;
+                border-radius: 5px;
+                overflow: hidden;
+                font-size: 0.6rem;
+            }
+            .row{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .game-image{
+                width: 110px;
+                height: 100px;
+                border-radius: 5px;
+            }
+            .card-title{
+                font-weight: 700;
+                margin-top: -.92rem;
+                line-height: 8px;
+                font-size: .6rem;
+            }
+        }
+    </style> 
+    
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Gamer Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#games">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero text-center">
+        <h1 class="display-4">Welcome to Gamer Hub</h1>
+        <p>Your ultimate destination for gaming news and reviews.</p>
+        <a href="#games" class="btn btn-primary">Explore Games</a>
+    </div>
+
+    <!-- Games Showcase -->
+    <section id="games" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" style="font-size: 2rem;">Featured Games</h2>
+            <div class="row" id="games-container">
+                <!-- Game cards will be injected here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light" >
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p class="text-center">We are passionate gamers dedicated to bringing you the latest in gaming news, reviews, and guides.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5" >
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Gamer Hub. All rights reserved.</p>
+        <a href="https://twitter.com" class="fab fa-twitter mr-3"></a>
+        <a href="https://facebook.com" class="fab fa-facebook mr-3"></a>
+        <a href="https://instagram.com" class="fab fa-instagram"></a>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/quote.js"></script>
+</body>
+</html>

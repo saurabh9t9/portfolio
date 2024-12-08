@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; /* Added flex display */
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right bottom, rgb(169, 4, 4), rgb(64, 64, 194));
+}
+
+.pu {
+    display: flex; /* Added flex display */
+    flex-direction: column; /* Stacked elements vertically */
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pu img {
+    display: flex;
+}
+
+.pu h1,
+.pu p {
+    text-align: center;
+}
+
+.branch, .stream, .confess, .year, .section, .gender, .your {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 4px;
+    width: 100%;
+    margin: 20px auto; /* Center with automatic margins */
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.branch h3, .stream h3, .confess h3, .year h3, .section h3, .gender h3, .your h3 {
+    margin-top: 20px;
+    text-align: center; /* Center headings */
+}
+
+.branch input , .stream input, .year input, .section input, .gender input, .your input{
+    margin-top: 20px;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+}
+.confess textarea{
+    margin-top: 20px;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-weight: 700;
+    width: 80%;
+    height: 150px;
+    resize: none;
+    font-size: 16px;
+    border: 2px solid black;
+    resize: vertical;
+}
+.branch button, .stream button, .confess button, .year button, .section button, .gender button, .your button {
+    margin-left: 30%;
+    font-weight: 700;
+    border-radius: 6px;
+    width: 60px;
+    height: 18px;
+}
+
+/* Clear and Finish buttons */
+.clear button {
+    width: 100px;
+    margin: 15px auto;
+    font-weight: 700;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 1px;
+}
+
+/* Finish button styles */
+.finish p button{
+    margin-left: 40%;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+    background-color: rgb(15, 12, 12);
+    color: aliceblue;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:0 1px 15px rgba(0, 0, 0, 0.3), 0 1px ;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+/* Hover effects */
+.finish p button:hover {
+    scale: 1.1;
+    box-shadow: 0 0 5px rgb(146, 42, 42), 0 0 25px rgb(159, 28, 28), 0 0 50px rgb(147, 23, 18), 0 0 100px rgb(145, 33, 20), 0 0 200px rgb(146, 21, 21);
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) { /* Tablets */
+    .pu {
+        margin-left: 0; /* Center content */
+    }
+
+    .pu img {
+        margin-left: 0; /* Center image */
+    }
+
+    .branch, .stream, .confess, .year, .section, .gender, .your {
+        width: 90%; /* Wider on smaller screens */
+    }
+
+    .branch h3, .stream h3, .confess h3, .year h3, .section h3, .gender h3, .your h3 {
+        font-size: 1.5rem; /* Adjust font size for readability */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile phones */
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .pu {
+        margin-top: 50px; /* Adjust top margin */
+    }
+
+    .branch, .stream, .confess, .year, .section, .gender, .your {
+        width: 100%; /* Full width on mobile */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .branch h3, .stream h3, .confess h3, .year h3, .section h3, .gender h3, .your h3 {
+        font-size: 1.2rem; /* Smaller font size for mobile */
+    }
+
+    .branch input, .stream input, .confess textarea, .year input, .section input, .gender input, .your input {
+        font-size: 1rem; /* Larger font for input */
+    }
+
+    .branch button, .stream button, .confess button, .year button, .section button, .gender button, .your button {
+        width: 20%; /* Adjust button width for mobile */
+    }
+    .clear button{
+        margin-left: 5px;
+    }
+}

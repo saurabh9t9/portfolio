@@ -1,0 +1,476 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+html{
+    font-size: 62.5;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black; 
+    color: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    margin-top: 20px;  
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    filter:drop-shadow(10px);
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.nav-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100%; 
+}
+.nav-img #list{
+    width: 30px;
+    height: 30px;
+}
+nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline; 
+    margin-left: 20%;
+    width: 70%;
+    border-bottom: 3px solid rgb(255, 0, 0);
+    background: transparent;
+    animation-delay: 0.1s;
+    }
+    nav.active{
+        display: block;
+    }
+nav a{
+    font-size: 2rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: color 0.3s;
+    border-bottom: 3px solid transparent;
+}
+#main{
+    color: red;
+}
+nav a:hover{
+    color: red;
+}
+    section{
+        height: 100vh;
+        width: 100%;
+    }
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        gap: 3rem;
+        top: -3%;
+    }
+
+  @keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateZ(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+  }
+
+
+    .home-img ,
+    .home-content,
+    .social-line,
+    .social-media,
+    nav,
+    button{
+       opacity: 0;
+       animation: fadeIn 0.5s forwards;
+    }
+
+
+    
+     .home-content {
+       flex-wrap: wrap;
+       animation-delay: 0.4s;
+    } 
+
+
+    .home .home-content span{
+        font-size: 2rem;
+    }
+    .home .home-content h1{
+        font-size: 5rem;
+        font-weight: 700;
+    }
+    #saurabh{
+        font-size: 3rem;
+    }
+    span{
+        color: red;
+    } 
+    .home .home-content h3{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+    .home .home-content p{
+        font-size: 1.7rem;
+    }
+
+
+
+
+     .home-img{
+        bottom: 0;
+        animation-delay: 0.2s;
+    } 
+
+
+
+
+     .home-img img{
+        margin-top: 2rem;
+        width: 30vw;
+        height: 100vh; 
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: animate .3s ease-in-out;
+    } 
+    .home-content span{
+        font-size: 3rem;
+    }
+   .home-img img:hover{
+        filter: drop-shadow(3px 4px 8px red);
+        animation: animate 1.5s ease-in-out;
+    }   
+     @keyframes animate{
+        0% {
+            scale: 1;
+        }
+        50%{
+            scale:1.05;
+        }
+        100%{
+            scale: 1;
+        }
+     }
+    button{
+        width: 5.7rem;
+        height: 2.5rem;
+        border: none;
+        outline: none;
+        border-radius: 3rem;
+        background: linear-gradient(to bottom right,red,violet);
+        cursor: pointer;
+        top: 0;
+        margin-left: 24%;
+        font-weight: 500;
+        font-size: 18px;
+        transition: .2s ease;
+        animation-delay: .1s;
+    }
+     button:hover {
+        scale: 1.0225;
+    }
+
+
+
+    .social-media{
+           margin-top: 0.5rem;
+           width: 100%;
+           height: 30px;
+           display: inline-block;
+           align-items: center;
+           cursor: pointer;
+    }
+
+
+
+
+    .social-line{
+        color: red;
+        font-size: 1.5rem;
+        animation-delay: 0.6s;
+    }
+
+
+    .social-media{
+        animation-delay: 0.8s;
+    }
+
+
+
+
+   .social-media #instagram{
+    width: 20px;
+    height: 20px;
+    color: aliceblue;
+    transition: color 0.3s;
+   }
+   .social-media #facebook{
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-left: 5px;
+    transition: color 0.3s;
+   }
+  #instagram:hover{
+    color: rgb(229, 60, 9);
+  }
+  #facebook:hover{
+    color: rgb(47, 47, 255);
+  }
+     @media(max-width: 850px) {
+        body{
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+         header{
+            margin-top: 0;
+            width: 100%;
+            height: 6vh;
+            position: fixed;
+        }
+            nav{
+                position: absolute;
+                top: 0;
+                display: inline;
+                width: auto;
+                height: auto;
+                border-bottom: 3px solid rgb(255, 0, 0);
+                border-left: 0.5rem solid rgb(255,0, 0) ;
+                border-radius: 1rem;
+                background-color: transparent;
+                right: 100%;
+                overflow: hidden;
+                transition: .3s  ease;
+                }
+                nav a{
+                    display: flex;
+                    font-size: 1.8rem;
+                    color: white;
+                    margin-left: 0.75rem;
+                    font-weight: 500;
+                    transition: 0.3 ease;
+                    border-bottom: 3px solid transparent;
+                }
+                 .nav-img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    margin-left: 90%; 
+                }
+                .nav-img img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    transition: .2s;
+                } 
+                
+         .nav-img img:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        } 
+          header:hover nav{
+             right: 0;
+             background-color: transparent;
+             backdrop-filter: blur(5px);
+        }  
+    .home{
+        display: flex;
+        flex-direction: column;
+        top: 1rem;
+        width: 100%;
+        height: 100vh; 
+        gap: 1rem;
+    }
+    .home .home-img{
+        width: 200px;
+        height: 250px;
+        margin-bottom: 1rem;
+    }
+    .home .home-img img{
+      width: 200px;
+      height: 250px;
+      border-radius:30% ;
+      object-fit: fill;
+      position: relative;
+    }
+     .home .home-content{
+        width: 90vw;
+        height: 80vh;
+   } 
+    .home .home-content h1{
+        font-size: 3rem;
+        margin-bottom: 0.3rem;
+        font-weight: 700;
+    }
+    .home .home-content h3{
+        font-size: 3rem;
+        margin-bottom: 0.3rem;
+        font-weight: 700;
+    }
+    .home .home-content p{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    #saurabh{
+        font-size: 2rem;
+    }
+    .project-title{
+        position: sticky;
+        margin-top: 0.5rem;
+        font-weight: 900;
+        font-size: 1.8rem;
+    }
+    a{
+        font-size: 1rem;
+    }
+    button{
+        width: 80px;
+        height: 30px;
+        margin-left: 42.5%;
+        margin-bottom: 5.5rem;
+        transition-delay: 0.1s;
+    }
+    }
+    @media(max-width:375px){
+        body{
+            body{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+             header{
+                margin-top: 0;
+                width: 100%;
+                height: 6vh;
+                position: fixed;
+            }
+                nav{
+                    position: absolute;
+                    top: 0;
+                    display: inline;
+                    width: auto;
+                    height: auto;
+                    border-bottom: 3px solid rgb(255, 0, 0);
+                    border-left: 0.5rem solid rgb(255,0, 0) ;
+                    border-radius: 1rem;
+                    background-color: transparent;
+                    right: 100%;
+                    overflow: hidden;
+                    transition: .3s  ease;
+                    }
+                    nav a{
+                        display: flex;
+                        font-size: 1.8rem;
+                        color: white;
+                        margin-left: 0.75rem;
+                        font-weight: 500;
+                        transition: 0.3 ease;
+                        border-bottom: 3px solid transparent;
+                    }
+                     .nav-img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        display: flex;
+                        margin-left: 90%; 
+                    }
+                    .nav-img img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        transition: .2s;
+                    } 
+                    
+             .nav-img img:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            } 
+              header:hover nav{
+                 right: 0;
+                 background-color: transparent;
+                 backdrop-filter: blur(10px);
+            }  
+        .home{
+            display: flex;
+            flex-direction: column;
+            top: 1rem;
+            width: 100%;
+            height: 700vh; 
+            gap: 1rem;
+        }
+        .home .home-img{
+            width: 160px;
+            height: 1900px;
+            margin-bottom: 0.8rem;
+        }
+        .home .home-img img{
+          width: 160px;
+          height: 190px;
+          border-radius: 30%;
+          object-fit: fill;
+          position: relative;
+        }
+         .home .home-content{
+            width: 90vw;
+            height: 80vh;
+       } 
+        .home .home-content h1{
+            font-size: 2.8rem;
+            margin-bottom: 0.2rem;
+            font-weight: 700;
+        }
+        .home .home-content h3{
+            font-size: 2rem;
+            margin-bottom: 0.2rem;
+            font-weight: 700;
+        }
+        .home .home-content p{
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        .project-title{
+            position: sticky;
+            margin-top: 0.5rem;
+            font-weight: 900;
+            font-size: 1.4rem;
+        }
+        a{
+            font-size: 1rem;
+        }
+        button{
+            margin-left: 42.5%;
+            margin-bottom: 4rem;
+        }
+        }
+    }
